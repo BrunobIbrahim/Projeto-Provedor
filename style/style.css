@@ -1,0 +1,15 @@
+:root{
+    --cor-branca: #fff;
+    --cor-destaque: #2f86d6;
+    --cor-detalhe: #233032;
+    --cor-sombreado: rgba(47, 134, 214, 1);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
