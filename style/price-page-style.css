@@ -14,3 +14,75 @@
     background-color: black;
     border-radius: 50%;
 }
+
+/* ==========================================================================
+   Seção topo
+   ========================================================================== */
+
+
+   .topo-price{
+    width: 100%;
+    padding: 35px 0px;
+    background-color: var(--cor-destaque);
+   }
+
+   .topo-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+   }
+
+   .logo-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .logo-price img{
+    width: 70px;
+   }
+
+   .logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 5px;
+   }
+
+   .logo-text h1{
+    font-size: 32px;
+   }
+
+   .logo-text p{
+    font-size: 16px;
+    color: var(--cor-branca);
+    font-weight: 600;
+   }
+
+   .links-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+   }
+
+   .links-price a{
+    font-size: 18px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+   }
+
+   .links-price a:visited{
+    font-size: 18px;
+    color: var(--cor-branca);
+    text-decoration: none;
+   }
+
+   .links-price a:hover{
+    font-size: 22px;
+   }

@@ -1,11 +1,15 @@
 :root{
     --cor-branca: #fff;
+    --cor-fundo-1: #f1f3f7;
+    --cor-fundo-2: #f6f6f6;
+    --cor-fundo-3: #a8a4a4;
     --cor-destaque: #2f86d6;
     --cor-detalhe: #233032;
+    --cor-detalhe-tabela: #a89f9f;
+    --cor-linha-tabela: rgba(168, 159, 159, 0.4);
     --cor-sombreado: rgba(47, 134, 214, 1);
+
 }
-
-
 
 *{
     margin: 0;
@@ -13,3 +17,288 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+
+/* ==========================================================================
+   Seção topo
+   ========================================================================== */
+
+
+   .topo-home{
+    width: 100%;
+    padding: 35px 0px;
+    background-color: var(--cor-branca);
+   }
+
+   .topo-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+   }
+
+   .logo-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .logo-home img{
+    width: 70px;
+   }
+
+   .logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 5px;
+   }
+
+   .logo-text h1{
+    font-size: 32px;
+   }
+
+   .logo-text p{
+    font-size: 16px;
+    color: var(--cor-destaque);
+    font-weight: 600;
+   }
+
+   .links-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+   }
+
+   .links-home a{
+    font-size: 18px;
+    color: var(--cor-detalhe);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+   }
+
+   .links-home a:visited{
+    font-size: 18px;
+    color: var(--cor-detalhe);
+    text-decoration: none;
+   }
+
+   .links-home a:hover{
+    font-size: 22px;
+   }
+
+
+   /* ==========================================================================
+   Seção Banner
+   ========================================================================== */
+
+.banner-home{
+    background-color: var(--cor-destaque);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5% 14%;
+}
+
+.banner-title{
+    width: 40%;
+    color: var(--cor-branca);
+}
+
+.banner-title p{
+    font-size: 18px;
+    
+}
+
+.banner-title h2{
+    font-size: 30px;
+    margin: 35px 0px;
+}
+
+.banner-title img{
+    width: 50%;
+    height: auto;
+}
+
+
+/* ==========================================================================
+   Seção anúncio
+   ========================================================================== */
+
+.anuncio-home{
+    padding: 2% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anuncio-home a{
+    color: var(--cor-branca);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.anuncio-home a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.anuncio-text{
+    width: 50%;
+    color: var(--cor-branca);
+}
+
+.anuncio-text h2{
+    font-size: 26px;
+}
+
+.anuncio-text p{
+    font-size: 18px;
+}
+
+
+.primeiro-anuncio{
+    background-color: var(--cor-detalhe);
+
+}
+
+.segundo-anuncio{
+    background-color: var(--cor-destaque);
+}
+
+.primeiro-anuncio a{
+    background-color: var(--cor-destaque);
+
+}
+
+.segundo-anuncio a{
+    background-color: var(--cor-detalhe);
+
+}
+
+/* ==========================================================================
+   Seção informações
+   ========================================================================== */
+
+.informacoes-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 14%;
+}
+
+.informacoes-home h2{
+    font-size: 32px;
+    width: 70%;
+    text-align: center;
+}
+
+.informacoes-home span{
+    color: var(--cor-destaque);
+}
+
+.info-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.info-cards div{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.info-cards img{
+    width: 33%;
+}
+
+.info-cards h3{
+    font-size: 20px;
+}
+
+.info-cards p{
+    font-size: 18px;
+}
+
+/* ==========================================================================
+   Seção informações
+   ========================================================================== */
+
+.planos-home{
+    width: 100%;
+    padding: 6% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-fundo-1);
+}
+
+.planos-home h2{
+    font-size: 36px;
+    margin-bottom: 8%;
+
+}
+
+.planos-home span{
+    color: var(--cor-destaque);
+}
+
+.planos-home table{
+    width: 80%;
+    box-shadow: 0 0 50px 18px var(--cor-sombreado);
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+ .planos-home img{
+    width: 65%;
+ }
+
+ .planos-home th{
+    border: 1px solid var(--cor-linha-tabela);
+    padding: 1.5% 3%;
+    background-color: var(--cor-branca);
+ }
+
+ .planos-home th h3{
+    font-size: 18px;
+ }
+
+ .planos-home th p{
+    font-size: 13px;
+    color: var(--cor-detalhe-tabela);
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ .planos-home td{
+    padding: 1.5% 3%;
+    border: 1px solid var(--cor-linha-tabela);
+    font-size: 16px;
+    font-weight: 500;
+ }
+
+ .planos-home tbody tr:nth-child(even){
+    background-color: var(--cor-branca);
+ }
+
+ .planos-home tbody tr:nth-child(odd){
+    background-color: var(--cor-fundo-1);
+    
+
+ }
