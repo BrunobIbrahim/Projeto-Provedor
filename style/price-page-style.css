@@ -4,15 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-}
-
-
-
-.bolinha{
-    width: 25px;
-    height: 25px;
-    background-color: black;
-    border-radius: 50%;
+    scroll-behavior: smooth;
 }
 
 /* ==========================================================================
@@ -38,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10%;
    }
 
    .logo-price img{
@@ -73,6 +66,7 @@
     font-size: 18px;
     color: var(--cor-branca);
     text-decoration: none;
+    font-weight: 600;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
    }
@@ -86,3 +80,119 @@
    .links-price a:hover{
     font-size: 22px;
    }
+
+
+   /* ==========================================================================
+   Seção Preços
+   ========================================================================== */
+
+.main-price{
+    display: flex;
+    align-items: center;
+    padding: 5% 0px;
+    text-align: center;
+}
+
+.price-table{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.price-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th:not(:first-child){
+    background-color: var(--cor-fundo-1);
+    width: 20%;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+
+.price-table th:not(:first-child) p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-fundo-3);
+}
+
+.price-table th:not(:first-child) h2{
+    font-size: 32px;
+
+}
+
+.price-table td:first-child{
+    background-color: var(--cor-fundo-1);
+    padding: 20px 0px 20px 20px;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.price-table td:not(:first-child){
+    font-size: 16px;
+    border: 1px solid var(--cor-fundo-1);
+    text-align: center;
+}
+
+.bolinha{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #2d89d5;
+    border-radius: 50%;
+}
+
+.price-table td:has(.bolinha) {
+    vertical-align: middle;
+}
+
+
+   /* ==========================================================================
+   Seção Rodapé
+   ========================================================================== */
+
+.rodape-price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-branca);
+}
+
+.contato-price{
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--cor-destaque);
+}
+
+.contato-price .logo-price{
+    margin-left: 0;
+}
+
+.contato-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+
+.dev-price{
+    text-align: center;
+    background-color: var(--cor-branca);
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+.dev-price span{
+    color: var(--cor-destaque);
+}
